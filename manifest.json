@@ -1,0 +1,16 @@
+{
+    "name": "Buenos Aires Concerts",
+    "version": "1.1.0",
+    "description": "An extension to fin upcoming concerts in Buenos Aires",
+    "manifest_version": 3,
+    "author": "Nico Borromeo",
+    "action": {
+        "default_popup":"index.html",
+        "default_title":"Buenos Aires Concerts"
+    },
+    "icons": {
+        "16": "./assets/arg-16.png",
+        "48": "./assets/arg-48.png",
+        "128": "./assets/arg-128.png"
+      }
+}
