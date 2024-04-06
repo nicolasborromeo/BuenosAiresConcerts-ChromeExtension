@@ -1,42 +1,105 @@
 body{
-    width: 260px;
-    box-shadow: 0px 0px 1px 1px darkblue;
-    margin: 8px;
+    box-sizing: border-box;
+    display: grid;
+    width: min-content;
+    height: fit-content;
+    box-shadow: 1px 2px 4px 1px darkblue;
+    background: linear-gradient(0.5turn, #306ddd, #30AADD);
 }
-img {
-    width: fit-content;
+
+.dynamic-section {
+    box-sizing: border-box;
+    border: 1px solid#0b425a;
+    border-radius: 5px;
+    background-color: #deecf2;
+    box-shadow: inset 1px 1px 3px 1px black;
+    margin: 12px 20px;
+    padding-top:4px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
+.dynamic-section .labels{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5px;
+    align-items: center;
+    justify-items: left;
+    padding-left: 50px;
+    padding-right: 5px;
+}
+
+.dynamic-section .selection{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 3px;
+    justify-items: left;
+    align-items: center;
+    padding-right: 40px;
+}
+
+#from-date, #to-date, #location{
+    border-radius: 3px;
+    width: 100px;
+}
+
+
+.button {
+    display: grid;
+    justify-self: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: -8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px  black;
+}
+/* TABLE */
+
 table{
+    margin: 20px;
+    height: 460px;
+    display: block;
+    overflow: scroll;
     border-collapse: collapse;
+    border-radius: 5px;
     /* background-image: url('./assets/concert-background.png'); */
     /* background: linear-gradient(#e66465, #9198e5); */
-    background: linear-gradient(0.25turn, #74ACDF, #ebf8e1, #74ACDF);
-    background-size:contain;
+    /* background: linear-gradient(0.25turn, #74ACDF, #ebf8e1, #74ACDF); */
+    /* background-size:contain; */
     color: black;
+    box-shadow: inset 1px 2px 3px 1px black;
+    background-color: white;
 }
+
 th{
     background-color: rgba(164, 170, 157, 0.356);
     color: black;
     padding: 5px 0px;
-    font-family: Helvetica;
-
 }
+
 td {
-    padding: 8px 4px;
+    padding: 4px 4px;
     text-align: center;
     }
 
 table, th, td {
-    border: 1px solid rgb(85, 104, 159);
-    width: fit-content;
+    border: 1px solid rgba(85, 104, 159, 0.235);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
   }
 
+  /* HEADER  */
   h2 {
-    background: linear-gradient(0.5turn, #74ACDF, #ebf8e1, #74ACDF);
+    background: linear-gradient(0.5turn, #306ddd, #ebf8e1, #306ddd);
     margin: 0;
     text-align: center;
     padding: 10px 0px;
-    font-family: helvetica;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid #0b425a;
+    font-size: 100%;
   }
 
  #loading{

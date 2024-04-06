@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buenos Aires Concerts</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Concert Tracker</title>
+    <link href="/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <h2>Buenos Aires Concerts</h2>
+    <div class="header">
+        <h2>Concert Tracker</h2>
+    </div>
+    <form action="/" method="post">
+        <div class="dynamic-section">
+
+            <span class="labels">
+                <label for="location">In</label>
+                <label for="from-date">From</label>
+                <label for="to-date">To</label>
+            </span>
+
+            <span class="selection">
+                <div class="location-select">
+                    <select id="location" name="name">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+                <div id="from-date">
+                    <input type="date" id="from-date" name="minDate">
+                </div>
+                <div id="to-date">
+                    <input type="date" id="to-date" name="maxDate">
+                </div>
+            </span>
+
+        </div>
+        <div class="button">
+            <button type="submit">Search</button>
+        </div>
+    </form>
     <div class="ui">
-
-        <!-- <img src="./assets/concert-background.png"> -->
-
         <table>
             <thead>
                 <tr id="tableHeader">
@@ -24,9 +57,10 @@
                 <p id="loading">Loading...</p>
             </tbody>
         </table>
-
     </div>
 
 </body>
 <script src="./script.js"></script>
+<!-- <script src="./server.js"></script> -->
+
 </html>

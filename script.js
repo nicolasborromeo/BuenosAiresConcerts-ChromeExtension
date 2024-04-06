@@ -1,7 +1,8 @@
-
+// const fetch = require('node-fetch')
 
 async function fetchData() {
-    const url = 'https://concerts-artists-events-tracker.p.rapidapi.com/location?name=Buenos%20Aires&minDate=2024-05-01&maxDate=2024-05-08&page=1';
+    // const url = `https://concerts-artists-events-tracker.p.rapidapi.com/location?name=Buenos%20Aires&minDate=2024-05-01&maxDate=2024-05-08&page=1`;
+    const url = `https://concerts-artists-events-tracker.p.rapidapi.com/location?"FILL THIS OUT"&page=1`;
     const options = {
         method: 'GET',
         headers: {
@@ -15,14 +16,13 @@ async function fetchData() {
 
         const response = await fetch(url, options);
         const result = await response.json();
+
         console.log(result.data);
+
         let dataArray = result.data
-        
+
         const tableBody = document.getElementById('tableBody');
 
-        // Clear any existing content in the table body
-
-        // tableBody.innerHTML = '';
         document.getElementById('loading').style.display = 'none'
         document.getElementById('tableHeader').hidden = false
         // Add a row for each concert
@@ -49,3 +49,5 @@ async function fetchData() {
 }
 
 fetchData()
+
+module.exports = {fetchData}
