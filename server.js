@@ -1,16 +1,14 @@
 
 const http = require('http');
 const fs = require('fs');
-// const { fetchData } = require('./script.js');
+
+let url = ''
+
 
 const server = http.createServer((req, res) => {
     console.log(`${req.method} ${req.url}`);
 
-
-
-
     let reqBody = ''
-    let url = 'I HAVE NOT CHANGED'
 
     req.on("data", (data) => {
         reqBody += data
@@ -43,8 +41,8 @@ const server = http.createServer((req, res) => {
             const js = fs.readFileSync('./script.js', 'utf-8');
             const replacedJS= js.replace(/"FILL THIS OUT"/g, url)
 
-            console.log('URLLLLL', url)
-            console.log(replacedJS)
+            // console.log('URLLLLL', url)
+            // console.log(replacedJS)
 
             res.statusCode = 200;
             res.setHeader("Content-Type", "text/javascript")

@@ -1,12 +1,12 @@
 {
-    "name": "Buenos Aires Concerts",
-    "version": "1.1.0",
-    "description": "An extension to fin upcoming concerts in Buenos Aires",
+    "name": "Concert Tracker",
+    "version": "2.0.0",
+    "description": "An extension to find upcoming concerts in any big city in the world",
     "manifest_version": 3,
-    "author": "Nico Borromeo",
+    "author": "Nicolas Borromeo",
     "action": {
         "default_popup":"index.html",
-        "default_title":"Buenos Aires Concerts"
+        "default_title":"Concert Tracker"
     },
     "icons": {
         "16": "./assets/arg-16.png",

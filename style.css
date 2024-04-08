@@ -1,10 +1,11 @@
-body{
+#content{
     box-sizing: border-box;
     display: grid;
-    width: min-content;
+    width: 280px;
     height: fit-content;
     box-shadow: 1px 2px 4px 1px darkblue;
     background: linear-gradient(0.5turn, #306ddd, #30AADD);
+    margin: -7px;
 }
 
 .dynamic-section {
@@ -60,15 +61,11 @@ body{
 
 table{
     margin: 20px;
-    height: 460px;
+    height: 400px;
     display: block;
     overflow: scroll;
     border-collapse: collapse;
     border-radius: 5px;
-    /* background-image: url('./assets/concert-background.png'); */
-    /* background: linear-gradient(#e66465, #9198e5); */
-    /* background: linear-gradient(0.25turn, #74ACDF, #ebf8e1, #74ACDF); */
-    /* background-size:contain; */
     color: black;
     box-shadow: inset 1px 2px 3px 1px black;
     background-color: white;
@@ -104,6 +101,9 @@ table, th, td {
 
  #loading{
     text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    width: 240px;
   }
 
  .top {

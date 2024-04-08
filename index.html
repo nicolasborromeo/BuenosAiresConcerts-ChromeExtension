@@ -9,54 +9,59 @@
 </head>
 
 <body>
-    <div class="header">
-        <h2>Concert Tracker</h2>
-    </div>
-    <form action="/" method="post">
-        <div class="dynamic-section">
+    <div id="content">
 
-            <span class="labels">
-                <label for="location">In</label>
-                <label for="from-date">From</label>
-                <label for="to-date">To</label>
-            </span>
-
-            <span class="selection">
-                <div class="location-select">
-                    <select id="location" name="name">
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Madrid">Madrid</option>
-                        <option value="Barcelona">Barcelona</option>
-                        <option value="Los Angeles">Los Angeles</option>
-                        <option value="New York">New York</option>
-                    </select>
-                </div>
-                <div id="from-date">
-                    <input type="date" id="from-date" name="minDate">
-                </div>
-                <div id="to-date">
-                    <input type="date" id="to-date" name="maxDate">
-                </div>
-            </span>
-
+        <div class="header">
+            <h2>Concert Tracker</h2>
         </div>
-        <div class="button">
-            <button type="submit">Search</button>
+        <form action="/" method="post">
+            <div class="dynamic-section">
+
+                <span class="labels">
+                    <label for="location">In</label>
+                    <label for="from-date">From</label>
+                    <label for="to-date">To</label>
+                </span>
+
+                <span class="selection">
+                    <div class="location-select">
+                        <select id="location" name="name">
+                            <option value="Select">Select...</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            <option value="New York">New York</option>
+                        </select>
+                    </div>
+                    <div id="from-date">
+                        <input type="date" id="from-date" name="minDate">
+                    </div>
+                    <div id="to-date">
+                        <input type="date" id="to-date" name="maxDate">
+                    </div>
+                </span>
+
+            </div>
+            <div class="button">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <div class="ui">
+            <table>
+                <thead>
+                    <tr id="tableHeader">
+                        <th class="top">DATE</th>
+                        <th class="top">ARTIST</th>
+                        <th class="top">VENUE</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <td id="loading">Loading...</td>
+                </tbody>
+            </table>
         </div>
-    </form>
-    <div class="ui">
-        <table>
-            <thead>
-                <tr id="tableHeader">
-                    <th class="top">DATE</th>
-                    <th class="top">ARTIST</th>
-                    <th class="top">VENUE</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <p id="loading">Loading...</p>
-            </tbody>
-        </table>
+
     </div>
 
 </body>
