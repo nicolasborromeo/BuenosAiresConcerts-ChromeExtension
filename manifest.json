@@ -1,6 +1,6 @@
 {
     "name": "Concert Tracker",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "An extension to find upcoming concerts in any big city in the world",
     "manifest_version": 3,
     "author": "Nicolas Borromeo",
@@ -9,8 +9,8 @@
         "default_title":"Concert Tracker"
     },
     "icons": {
-        "16": "./assets/arg-16.png",
-        "48": "./assets/arg-48.png",
-        "128": "./assets/arg-128.png"
+        "16": "./assets/logo-16.png",
+        "48": "./assets/logo-48.png",
+        "128": "./assets/logo-128.png"
       }
 }

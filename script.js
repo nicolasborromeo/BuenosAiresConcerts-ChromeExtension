@@ -48,6 +48,11 @@ async function fetchData() {
     }
 }
 
-fetchData()
+//CLICK
 
-module.exports = {fetchData}
+document.querySelector('.button').addEventListener('click', ()=> {
+
+    fetchData()
+})
+
+// module.exports = {fetchData}

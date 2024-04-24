@@ -21,7 +21,9 @@
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 .dynamic-section .labels{
     display: grid;
@@ -42,9 +44,16 @@
     padding-right: 40px;
 }
 
-#from-date, #to-date, #location{
+#from-date, #to-date{
     border-radius: 3px;
     width: 100px;
+    font-size: 12px;
+}
+#location {
+    border-radius: 3px;
+    width: 105px;
+    box-shadow: inset 1px 2px 1px black;
+    font-size: 12px;
 }
 
 
