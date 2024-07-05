@@ -38,7 +38,7 @@ function listenForClick() {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '162533e4d2msh959ff92e11ad278p1cf2e6jsnd8daccf28035',
+                'X-RapidAPI-Key': process.env.KEY,
                 'X-RapidAPI-Host': 'concerts-artists-events-tracker.p.rapidapi.com'
             }
         }
